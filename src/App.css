@@ -1,7 +1,13 @@
 #root {
-  max-width: 1280px;
+  max-width: 100vw;
+  max-height: 100vh;
+  width: 100vw;
+  height: 100vh;
   margin: 0 auto;
   text-align: center;
   background: #EDEDED;
+  display:flex; 
+  justify-content:center;
+  align-items:center;
 }
 
