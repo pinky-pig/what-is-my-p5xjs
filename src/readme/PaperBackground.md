@@ -142,6 +142,8 @@ random() // 5
 
 ## React版全部代码
 
+![paper-bg](https://cdn.jsdelivr.net/gh/pinky-pig/pic-bed/imagespaper-bg.gif)
+
 ```ts
 import { useEffect } from 'react'
 import p5 from 'p5' 
