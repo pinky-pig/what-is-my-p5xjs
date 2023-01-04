@@ -26,28 +26,25 @@ export const Draw = () => {
         p5.noiseSeed(p5.random(99999))
         p5.noLoop()
         p5.pixelDensity(5)
-        p5.colorMode(p5.HSL, 360, 100, 100, 100)
+        p5.colorMode(p5.HSL, 360, 100, 100, 100) // HSL 色调值的最大值 饱和度值的最大值 光度值的最大值 透明度值的最大值
       };
   
       p5.draw = () => {
         let livepal = p5.random([0, 1, 2, 3, 4, 5, 6, 7, 1])
         p5.background(palettes[livepal][4])
         
-        if (true) {
-          let padfactor = 1e3;
-          let e = 3e4;
-          for (; e--;) {
-            p5.x = p5.random(p5.width),
-            p5.y = p5.random(p5.height),
-            p5.push(),
-            p5.strokeWeight(.2),
-            p5.stroke(50, 50, p5.random(55, 95), p5.random(1, 15)),
-            p5.noFill(),
-            p5.bezier(p5.random(-padfactor, p5.width + padfactor), p5.random(-padfactor, p5.height + padfactor), p5.random(-padfactor, p5.width + padfactor), p5.random(-padfactor, p5.height + padfactor), p5.random(-padfactor, p5.width + padfactor), p5.random(-padfactor, p5.height + padfactor), p5.random(-padfactor, p5.width + padfactor), p5.random(-padfactor, p5.height + padfactor)),
-            p5.pop()
-          }
+        let padfactor = 1e3;
+        let e = 3e4;
+        for (; e--;) {
+          p5.x = p5.random(p5.width),
+          p5.y = p5.random(p5.height),
+          p5.push(),
+          p5.strokeWeight(.2),
+          p5.stroke(50, 50, p5.random(55, 95), p5.random(1, 15)),
+          p5.noFill(),
+          p5.bezier(p5.random(-padfactor, p5.width + padfactor), p5.random(-padfactor, p5.height + padfactor), p5.random(-padfactor, p5.width + padfactor), p5.random(-padfactor, p5.height + padfactor), p5.random(-padfactor, p5.width + padfactor), p5.random(-padfactor, p5.height + padfactor), p5.random(-padfactor, p5.width + padfactor), p5.random(-padfactor, p5.height + padfactor)),
+          p5.pop()
         }
-        p5.push();
       }
       
       canvas = p5
