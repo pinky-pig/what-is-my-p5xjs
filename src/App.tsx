@@ -1,13 +1,13 @@
-import { useEffect, useState } from 'react'
 import './App.css' 
-import { PaperTextureBackground } from './background'
-import { Draw } from './draw'
+
+import { RouterProvider } from 'react-router-dom'
+import { router } from './router'
+
 function App() {
 
   return (
     <div className="App">
-      {/* <PaperTextureBackground></PaperTextureBackground> */}
-      <Draw></Draw>
+      <RouterProvider router={router}></RouterProvider>
     </div>
   )
 }
