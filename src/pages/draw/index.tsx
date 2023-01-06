@@ -22,10 +22,7 @@ export const Draw = () => {
 
       p5.setup = () => {
         p5.createCanvas(600, 750);
-        p5.randomSeed(p5.random(99999))
-        p5.noiseSeed(p5.random(99999))
         p5.noLoop()
-        p5.pixelDensity(5)
         p5.colorMode(p5.HSL, 360, 100, 100, 100) // HSL 色调值的最大值 饱和度值的最大值 光度值的最大值 透明度值的最大值
       };
 
